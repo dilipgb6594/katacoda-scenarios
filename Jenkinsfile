@@ -35,7 +35,8 @@ spec:
     stage('git webhook') {
       steps {
         container('golang') {
-          print("Git Branch is"+env.GIT_BRANCH)
+          print("Git Branch is: "+env.GIT_BRANCH)
+          print("Git URL is: "+ env.GIT_URL)
           }
       }
     }
