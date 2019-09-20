@@ -37,7 +37,7 @@ spec:
         container('golang') {
           print("Git Branch is: "+env.GIT_BRANCH)
           print("Git URL is: "+ env.GIT_URL)
-          def GIT_REPO_NAME = env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')
+         // def GIT_REPO_NAME = env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')
           print("Git repository name:"+${WORKSPACE})
           }
       }
